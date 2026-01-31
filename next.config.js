@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     eslint: {
-      ignoreDuringBuilds: true, // "Vercel, не смотри на ошибки стиля"
+      // ЗАСТАВЛЯЕМ VERCEL ЗАКРЫТЬ ГЛАЗА НА ОШИБКИ
+      ignoreDuringBuilds: true,
     },
     typescript: {
-      ignoreBuildErrors: true, // "Vercel, не смотри на ошибки типов"
+      ignoreBuildErrors: true,
     },
     images: {
-       unoptimized: true, // "Vercel, не усложняй работу с картинками"
+       unoptimized: true,
     }
   };
   
